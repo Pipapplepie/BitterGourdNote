@@ -78,7 +78,7 @@ _theorem._ If the Hessian matrix of $E(w,b)$ is Positive Semidefinite, then $E(w
 
 $f(x_i) = w^T  x_i + b$ where $x_i$, $w$, $b$ are vectors, say in $\mathbb{R}^n$
 
-![nice](https://user-images.githubusercontent.com/107236740/202981329-96377202-7a2d-4bb9-9431-709f6332b958.png)
+<img scr='https://user-images.githubusercontent.com/107236740/202981329-96377202-7a2d-4bb9-9431-709f6332b958.png' width='50%'>
 
 $\therefore$ The loss function is:
 
@@ -86,7 +86,9 @@ $\therefore$ The loss function is:
 
 **也可以将其简化为：** $E_{\hat{w}} = (y - X \hat{w})^T \cdot (y - X \hat{w})$
 
-where $\hat{w} = [w^T b]^T$ and ![w](https://user-images.githubusercontent.com/107236740/202983042-28d33c94-9d28-4068-b990-a0e3775e3d47.png)
+where $\hat{w} = [w^T b]^T$ and 
+
+<img src='https://user-images.githubusercontent.com/107236740/202983042-28d33c94-9d28-4068-b990-a0e3775e3d47.png' width = '50%'>
 
 $\therefore \hat{w}^* = arg \ min_{\hat{w}} \ E_{\hat{w}}$
 
