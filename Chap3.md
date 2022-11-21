@@ -61,6 +61,8 @@ $\rightarrow (x*, b*) = arg max_{(w,b)} \ L(w,b) = arg max_{(w,b)} \ \sum_{n=1}^
 
 **故，结论与最小二乘法相同！**
 
+### 殊途同归
+
 **_Claim:_** $E(w,b) = \Sigma_{i = 1}^m (y_i - f(x_i))^2$ is a convex function. （凸函数）
 
 _def._ (of convex set) $D \subset \mathbb{R}^n$, $\forall x,y \ \in D$ and $\forall \alpha \in [0,1]$, we have
@@ -130,6 +132,10 @@ p(y=0 | $\hat{x}$ ; $\beta$) = 1 / $(1+e^{{\beta}^T \hat{x}})$ = $p_0(\hat{x}; \
 
 p(y | $\hat{x}$ ; $\beta$) = $y \cdot p_1(\hat{x}; \beta)$ + $(1-y) \cdot p_0(\hat{x}; \beta)$
 
+**极大似然估计**
+
+Loss Function: 
+
 _def._ (信息熵 Entropy) $H(x) = - \ \Sigma \ p(x) \ log_{b}  p(x)$. (对不确定性的数学表达)
 
 _def._ (相对熵；KL散度) $D_{KL}$ (p||q) = $- \ \Sigma_x \ p(x) \ log_{b}  \frac{p(x)}{q(x)} $.
@@ -137,5 +143,9 @@ _def._ (相对熵；KL散度) $D_{KL}$ (p||q) = $- \ \Sigma_x \ p(x) \ log_{b}  
 _def._ (交叉熵) $- \ p(x) \ log_{b}  q(x) $
 
 NOTE: 从机器学习三要素的 **“策略”** 而言，当我们的模拟分布与理想分布最接近时即为最优分布，因此可以通过**最小化交叉熵**这个策略来求出最优分布。
+
+### 殊途同归
+
+$\Sigma_{i=1}^m \ (- \ y_i \beta^T \hat{x_i} + \ ln(1 + e^{\beta^T\hat{x_i}}))$
 
 # 二分类线性判别分析 (Bisective Classification)
