@@ -152,11 +152,15 @@ $\Sigma_{i=1}^m \ (- \ y_i \beta^T \hat{x_i} + \ ln(1 + e^{\beta^T\hat{x_i}}))$
 
 ## 算法原理（模型）
 
-
+![12](https://user-images.githubusercontent.com/107236740/203107382-774e4f76-5be1-4e09-a390-25052a6b0b3a.png)
 
 ## 损失函数推导（策略）
 
+![hh](https://user-images.githubusercontent.com/107236740/203107968-78327bbc-2716-4a73-b0a9-5cae52e77336.png)
+
 ## 拉格朗日乘子法
+
+救命，打公式好麻烦，我先搁着。
 
 ## 求解w（算法）
 
