@@ -74,6 +74,23 @@ _theorem._ If the Hessian matrix of $E(w,b)$ is Positive Semidefinite, then $E(w
 
 # 多元线性回归 (Multivariate Linear Regression)
 
+最小二乘法 ————> 损失函数（Loss Function）
+
+$f(x_i) = w^T  x_i + b$ where $x_i$, $w$, $b$ are vectors, say in $\mathbb{R}^n$
+
+![nice](https://user-images.githubusercontent.com/107236740/202981329-96377202-7a2d-4bb9-9431-709f6332b958.png)
+
+$\therefore$ The loss function is:
+
+![en](https://user-images.githubusercontent.com/107236740/202981424-c2be835a-b7ac-46de-a11f-0fe456d9bd18.png)
+
+**也可以将其简化为：** $E_{\hat{w}} = (y - X \hat{w})^T \cdot (y - X \hat{w})$
+
+where $\hat{w} = [w^T b]^T$ and ![w](https://user-images.githubusercontent.com/107236740/202983042-28d33c94-9d28-4068-b990-a0e3775e3d47.png)
+
+$\therefore \hat{w}^* = arg \ min_{\hat{w}} \ E_{\hat{w}}$
+
+
 # 对数几率回归 (Logistic Regression)
 
 # 二分类线性判别分析 (Bisective Classification)
