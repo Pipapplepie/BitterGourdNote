@@ -148,4 +148,16 @@ NOTE: 从机器学习三要素的 **“策略”** 而言，当我们的模拟�
 
 $\Sigma_{i=1}^m \ (- \ y_i \beta^T \hat{x_i} + \ ln(1 + e^{\beta^T\hat{x_i}}))$
 
-# 二分类线性判别分析 (Bisective Classification)
+# 二分类线性判别分析 (Bisective Classification) 
+
+## 算法原理（模型）
+
+
+
+## 损失函数推导（策略）
+
+## 拉格朗日乘子法
+
+## 求解w（算法）
+
+## 广义特征值和广义瑞利商
