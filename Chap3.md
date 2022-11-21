@@ -1,3 +1,9 @@
+# 机器学习三要素
+
+模型；
+策略；
+算法；
+
 # 一元线性回归（Univariate Linear Regression）
 
 Model: $y = wx + b$
@@ -103,5 +109,33 @@ Hint: 矩阵微分公式
 $\therefore \hat{w}^* = (X^TX)^{-1} X^Ty$
 
 # 对数几率回归 (Logistic Regression)
+
+分类算法，以二分类为例：
+
+**Sigmoid Function:** $f(z) = \frac{1}{1+e^{-z}}$ : $\mathbb{R} \rightarrow (0,1)$
+
+**dmf:**
+
+p(y=1|x) = $\frac{1}{1+e^{-(w^Tx + b)}}$ ;
+
+p(y=0|x) = 1 - p(y=1|x)
+
+**Then** 
+
+p(y=1| $\hat{x}$ ; $\beta$) = $e^{{\beta}^T \hat{x}}$ / $(1+e^{{\beta}^T \hat{x}})$ = $p_1(\hat{x}; \beta)$
+
+p(y=0 | $\hat{x}$ ; $\beta$) = 1 / $(1+e^{{\beta}^T \hat{x}})$ = $p_0(\hat{x}; \beta)$
+
+**Therefore,** $\forall y \in (0,1)$
+
+p(y | $\hat{x}$ ; $\beta$) = $y \cdot p_1(\hat{x}; \beta)$ + $(1-y) \cdot p_0(\hat{x}; \beta)$
+
+_def._ (信息熵 Entropy) $H(x) = - \ \Sigma \ p(x) \ log_{b}  p(x)$. (对不确定性的数学表达)
+
+_def._ (相对熵；KL散度) $D_{KL}$ (p||q) = $- \ \Sigma_x \ p(x) \ log_{b}  \frac{p(x)}{q(x)} $.
+
+_def._ (交叉熵) $- \ p(x) \ log_{b}  q(x) $
+
+NOTE: 从机器学习三要素的 **“策略”** 而言，当我们的模拟分布与理想分布最接近时即为最优分布，因此可以通过**最小化交叉熵**这个策略来求出最优分布。
 
 # 二分类线性判别分析 (Bisective Classification)
