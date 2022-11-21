@@ -72,6 +72,8 @@ _def._ (Positive Semidefinite)
 
 _theorem._ If the Hessian matrix of $E(w,b)$ is Positive Semidefinite, then $E(w,b)$ is a convex function with respect to w and b.
 
+可证$E(w,b)$ 为凸函数。（skipped）
+
 # 多元线性回归 (Multivariate Linear Regression)
 
 最小二乘法 ————> 损失函数（Loss Function）
@@ -98,6 +100,7 @@ Hint: 矩阵微分公式
 
 <img src='https://user-images.githubusercontent.com/107236740/202985371-317c1a3d-ae52-4f02-8e65-c374c31282af.png' width='50%'>
 
+$\therefore \hat{w}^* = (X^TX)^{-1} X^Ty$
 
 # 对数几率回归 (Logistic Regression)
 
