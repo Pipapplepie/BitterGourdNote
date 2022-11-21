@@ -78,7 +78,7 @@ _theorem._ If the Hessian matrix of $E(w,b)$ is Positive Semidefinite, then $E(w
 
 $f(x_i) = w^T  x_i + b$ where $x_i$, $w$, $b$ are vectors, say in $\mathbb{R}^n$
 
-<img scr='https://user-images.githubusercontent.com/107236740/202981329-96377202-7a2d-4bb9-9431-709f6332b958.png' width='50%'>
+<img src='https://user-images.githubusercontent.com/107236740/202985560-906bda9f-a7f8-435f-8f12-b3b84292b942.png' width='50%'>
 
 $\therefore$ The loss function is:
 
@@ -93,6 +93,11 @@ where $\hat{w} = [w^T b]^T$ and
 $\therefore \hat{w}^* = arg \ min_{\hat{w}} \ E_{\hat{w}}$
 
 可证这还是一个**凸函数求最值**的问题。(skipped)
+
+Hint: 矩阵微分公式
+
+<img src='https://user-images.githubusercontent.com/107236740/202985371-317c1a3d-ae52-4f02-8e65-c374c31282af.png' width='50%'>
+
 
 # 对数几率回归 (Logistic Regression)
 
