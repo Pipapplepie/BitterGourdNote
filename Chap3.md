@@ -92,6 +92,7 @@ where $\hat{w} = [w^T b]^T$ and
 
 $\therefore \hat{w}^* = arg \ min_{\hat{w}} \ E_{\hat{w}}$
 
+可证这还是一个**凸函数求最值**的问题。(skipped)
 
 # 对数几率回归 (Logistic Regression)
 
