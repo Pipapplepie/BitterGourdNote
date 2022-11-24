@@ -46,6 +46,22 @@ a 的可能取值个数|V|越大，通常其固有值IV(a)也越大。**但**增
 
 ## CART决策树
 
+_def._ （基尼值） 从样本集合D中随机抽取两个样本，其类别标记不一致的概率。
 
+$Gini(D) =\Sigma_{k=1}^{|Y|} \Sigma_{k' \neq k} p_k p_{k'}$
+
+$= 1 -\Sigma_{k=1}^{|Y|} p_k^2$
+
+_def._ （基尼指数） （类似于信息熵和条件熵的关系）
+
+Gini_index(D,a) = $\Sigma_{v=1}^V \frac{|D^v|}{|D|} \ Gini(D^v)$
+
+**CART的策略**：选择基尼指数最小的属性为最优划分属性
+
+$a_* = arg \ max_{a \in A} \  Gini \ index(D,a)$
+
+最优划分点的选择：对属性a的每个可能值v，将数据集D分为a=v和$a \neq v$两部分来计算基尼指数，即
+
+Gini_index(D,a) = $\frac{|D^{a=v}|}{|D|} \ Gini(D^{a=v}) + \frac{|D^{a \neq v}|}{|D|} \ Gini(D^{a \neq v})$
 
 ##
