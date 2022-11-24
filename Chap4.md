@@ -25,10 +25,20 @@ $Gain(D,a) = Ent(D) - \Sigma_{v=1}^V \frac{|D^v|}{|D|} \ Ent(D^v)$
 
 $\rightarrow$ **ID3决策树的策略：** 以**信息增益**为准则来划分属性的决策树。
 
-$a_* = arg \ max_{a \in A} \ Gain(D,a)$
+$a_* = arg \ max_{a \in A} \ Gain(D,a)$ (选择最优划分属性)
 
 
-##
+## C4.5决策树
+
+ID3的bug：对可能**取值数目较多的属性**有所偏好。（如无意义的编号属性）
+
+**改进：** 增益率
+
+$Gain \ ratio(D,a) = \frac{Gain(D,a)}{IV(a)}$ where
+
+$IV(a) = - \Sigma_{v=1}^V \frac{|D^v|}{|D|} \ \log_2 \frac{|D^v|}{|D|}$ （a的固有值）
+
+a 的可能取值个数|V|越大，通常其固有值IV(a)也越大。**但**增益率可能又会对可能取值数目**较少**的属性有偏好。
 
 ##
 
