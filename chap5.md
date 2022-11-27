@@ -38,5 +38,17 @@ $\rightarrow w*, b* = arg \ min_{w,b} \ \Sigma_{x \in M} (\hat{y} - y)(w^T x + b
 
 ## 神经网络
 
-感知机只能扽类线性可分的数据集，对于线性不可分的数据集则无能为力，我们可以使用多个神经元构成的神经网络。
+感知机只能扽类线性可分的数据集，对于线性不可分的数据集则无能为力，我们可以使用多个神经元构成的神经网络。（通用近似定理）
 
+<img src = 'https://user-images.githubusercontent.com/107236740/204133143-4809b5c2-5388-4ea9-a26d-5a9d64fa2d42.png' width='60%'>
+
+可将神经网络视为一个特征加工函数：
+
+$x \in \mathbb{R}^d \rightarrow NN(x) \rightarrow y = x* \in \mathbb{R}^l$
+
+**（单输出）回归：** 后面接一个 $\mathbb{R}^l \rightarrow \mathbb{R}$的神经元，如 $f(w^T x* + b)$.
+
+**分类：** 后面接一个 $\mathbb{R}^l \rightarrow [0,1]$的神经元，如 Sigmoid函数。
+
+e.g., 假设激活函数全是sigmoid，目前想完成一个（多输出）回归任务，因此可用均方差做损失函数。
+可用算法：误差逆传播算法（BP算法）：基于随机梯度下降的参数更新方法（可自行查阅详情）。（但神经网络大多不具备凸函数的良好性质，更多会走向局部最小点，而非全局最小点。）
